@@ -1,0 +1,14 @@
+String
+-z "$str"
+-n "$str"
+"$str" = "$str2"
+"$str" != "$str2"
+
+
+Integer
+"v1" -eq "v2"
+"v1" -ne "v2"
+"v1" -gt "v2"
+"v1" -ge "v2"
+"v1" -lt "v2"
+"v1" -le "v2"
