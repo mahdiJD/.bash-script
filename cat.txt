@@ -1,0 +1,27 @@
+cat a.txt
+cat -n a.txt
+cat -b a.txt
+cat -s a.txt
+cat -v a.txt
+cat -T a.txt
+cat -E a.txt
+cat a.txt b.txt > all.txt
+cat a.txt | grep nice
+
+
+ls
+alias x="ls"        ? => ctrl + alt + e 
+unalias x
+
+date
+
+sleep 10 &
+fg % [x]
+bg % [x]
+jobs
+kill % [x]
+diswon % [x]
+lsof -i: 8000
+
+ps -ef
+ps aux
