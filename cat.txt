@@ -25,3 +25,69 @@ lsof -i: 8000
 
 ps -ef
 ps aux
+
+echo 'hello world!' > file.txt
+echo 'hello world!' &> file.txt         Zshell
+echo 'Bye' >> file.txt
+echo 'Bye world' | sed "s/Bye/hello'
+
+
+command1 | xargs -t command2
+
+exec 3</dev/tcp/hostAdresse/port  =>  exec 3</dev/tcp/www.google.com/80 
+printf 'GET / HTTP/1.0\r\n\r\n' >&3
+cat <&3
+
+
+{ echo "my home directory:"; ls ~;} > temp.txt
+
+v="hello"
+printf '%s\n' "${v^}"
+printf '%s\n' "${v^^}"
+printf '%s\n' "${v,}"
+printf '%s\n' "${v,,}"
+printf '%s\n' "${v~}"
+printf '%s\n' "${v~~}"
+echo "${a/a/A}"
+echo "${a//a/A}" 
+echo "${a[@]/#/R}" 
+
+
+locate c.txt 
+       _
+      | -name
+find <  -type f
+      | -type d
+      | -mmin -120
+      | -mmin +120
+      | -mtime +120
+      | -mtime -120
+      | -size -12M
+      |_
+
+sort -n a.txt
+sort -rn a.txt
+sort -rn a.txt
+
+source a.sh
+. a.sh
+
+!4
+!!  =  !$
+sudo !!
+echo $((5+2))
+echo '10 == 11 && 4<2' | bc
+
+-----------------------------------------------------
+diff <(curl http://toplern.com/) <(curl http://toplern.com/aboute-us) 
+
+mkdir 20{09..11}-{01..12} 
+mkdir -p top/sub_20{09..11}-{a01,a02,a03}
+echo {0..10..2}
+echo {a..z..2}
+echo {a..c}{1..3}
+
+bash -n project.sh
+bash -x project.sh
+bash --debug project.sh
+ 
