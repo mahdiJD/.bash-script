@@ -1,0 +1,4 @@
+echo "hello world" | at now + 10 minutes
+echo "hello world" | at 17:00 
+atq
+atrm 1
